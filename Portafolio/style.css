@@ -1,132 +1,399 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-}
-
-body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+   --color-azul-fuerte:#2A7AE4;
+   --color-background:#F5F5F5;
+   --color-azul:#EAF2FD;
+   --color-texto:#464646;
+   --font-family:"Raleway, sans-serif";
+   --color-blanco:#FFFFFF;
 }
 ol, ul,li {
     list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
-a{
+a {
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--color-texto);
+    font-size: 13px;
+    font-family: var(--font-family);
+    padding-left: 1.5em;
 }
-
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sección Menu*/
-
-section.menu{
-
+a:hover {
+    color: rgb(21, 1, 149);  
 }
-
-/*Sección Title*/
-
-section.title{
-
+h2{
+    font-size: 2.4em;
 }
-
-/*Sección About*/
-
-section.about{
-
+h3{
+    font-size: 1.8em;
 }
+h4{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.azul{
+    background-color:  #EAF2FD;
+ }
 
-/*Sección Hobbies*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.contenedor-principal{
+    display: flex;
+    width: 100%;
+    background-color: var(--color-background, #F5F5F5);
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-section.hobbies{
+ }
+ .contenedor-secciones {
+    width: 100%;
+    box-sizing: border-box;
     
+ }
+ .seccion {
+    display: flex;   
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    max-width: 100%;
+    font-family:  Raleway, sans-serif;
+    color: var(--color-texto, #464646);     
+    font-size: 1em;
+        
 }
-
-/* Experiencia Académica*/
-
-section.academic{
-
+/*BEM (Bloque, Elemento, Modificador) */
+.header {
+    
+ }
+ .header-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+ } 
+ .header-name{
+    display: flex;
+    align-items: center;
+ }
+ .header-nav{
+    display: flex;
+    align-items: center;
+ }
+ .header-name img{
+    display: flex;
+    max-width: 100%;
+ }
+ .header-name a {
+    padding-left: 0.4em;
 }
-
-/* experiencia*/
-
-section.experience{
-
+.titulo {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    Height: auto; 
+ } 
+ .titulo-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+ }
+ .title__network{  
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+ }
+ .title__bio {
+    font-size: 2.5em; 
+ }
+ .title__subsection {
+    font-size: 1em;
+    } 
+ .title-profile{
+    display: flex; 
+    padding-left: 1em;
 }
-
-/*Contacto*/
-
-section.formcontato{
-
+.title-profile img{
+    max-width: 100%;
 }
-
-/*footeer*/
-
-section.footer{
+.skills, .hobbies{
+    
+ }
+ .skills__title, .hobbies__title{
+    display: flex;
+    justify-content: center;
+ }
+ .skills__line, .hobbies__line{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .skills__box, .hobbies__box{
+    padding: 10px; 
+    height: 3em;
+    width: 3em;
+    background-color: var(--color-cartas, #FFFFFF);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 2em; 
+ }
+ .skills__box ul, .hobbies__box ul{
+    padding: 0; 
+ }
+ .skills__box li, .hobbies__box li{
+    display: flex;
+ }
+ .skills__img, .hobbies__img{
+    width: 0.8em;
+    height: 0.8em;
+    align-items: center
+ }
+ .skills__name, .hobbies__name{
+    width: 100%;
+    margin-top: 0.2em;
+    font-size: .58em;
+}
+.academic {
+    flex-direction: column;
+    align-items: center;
+ }
+ .academic__courses {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .academic__courses__box{
+    display: flex;
+    flex-direction: column;
+ }
+ .academic__courses__item__img{
+    background-color: var(--color-cartas, #FFFFFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    height: 4em;
+    width: 5em;
+    font-size: 3em;
+ }
+ .academic__courses__item__img {
+ }
+ .academic__courses__item__subtitle p {
+    margin-top: 5px;
+    margin-bottom: 0px; 
+}
+.experience {
    
+ }
+ .experience__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+ }
+ .experiencie__box {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+ }
+ .experience__img {
+    margin-bottom: 26px;
+    padding-right: 1em;
+    max-width: 70%;
+   
+ }
+ .experiencie__img {
+    margin-bottom: 26px;
+    padding-left: 1em;
+    max-width: 70%;
+ }
+ .experience__info{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ } 
+ .experience__text{
+   font-size: 0.6em;
+   padding-bottom: 10px;
+   margin-top: 0.6em;
+ }
+ .experience__title{
+    font-size: 1em;
+    margin: 0;
+ }
+ .experience__description{
+ }
+ .experience__repo{
+    display: flex;
+ }
+ .experience__repo a {
+    color:none;
+    padding:0
+ }
+ .experience-btn-repositorio{
+        background-color:transparent;
+        border: 1px solid var(--color-azul-fuerte, #2A7AE4);
+        cursor:pointer;
+        color: var(--color-azul-fuerte, #2A7AE4);
+        font-family:  Raleway, sans-serif;
+        font-size:16px;
+        text-decoration:none;
+        margin-right: 0.25em;
+        width: 7em;
+        height: 3.2em;
+        padding: 16px;
+ }
+ .experience-btn-repositorio a {
+    color: var(--color-azul-fuerte, #2A7AE4);
+
+ }
+ .experience-btn-repositorio :hover {
+        background-color:transparent;
+ }
+ .experience-btn-repositorio:active {
+        position:relative;
+        top:1px;
+ }
+ .experience-btn-demo {
+	background-color: var(--color-azul-fuerte, #2A7AE4);
+	cursor:pointer;
+	color: var(--color-blanco, #FFFFFF);
+	font-family:  Raleway, sans-serif;
+	font-size:16px;
+	text-decoration:none;
+    margin-left: 0.25em;
+    width: 7em;
+    height: 3.2em;
+    padding: 16px;
+    
+ }
+ .experience-btn-demo a{
+    color: var(--color-blanco, #FFFFFF);
+ } 
+ .experience-btn-demo:hover {
+	background-color:#285282;
+ }
+ .experience-btn-demo:active {
+	position:relative;
+	top:1px;
 }
-
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menú */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+.formcontato {
+    justify-content: flex-end;
+    align-items: normal;
+    height: 38em;
+    max-height: 100%;
+ }
+ .formcontato-contacto{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+ }
+ .formcontato-img{
+    box-sizing: border-box;
+    width: 69%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+ }
+  .formcontato-img img{
+    
+    box-sizing: border-box;
+    width: 100%;
+ }  
+ .formcontato__derecha {
+    box-sizing: border-box;
+    width: 100%;
+ }
+ .formcontato__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+ }
+ .formcontato__title {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 0.1em;
+ }
+ .formcontato__subtext {
+    margin: 0;
+    font-size: 0.68em;
+ } 
+ .formcontato__form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1em;
+    height: 23.3em;
+    align-content: stretch;
+    gap: 1.7em;
+ }
+ .formcontato__input {
+    display : flex;
+    height: 10em;
+    border: none;
+    background-color: var(--color-blanco, #FFFFFF);
+ }
+ .formcontato__boton{
+    display: flex;
+    background-color: var(--color-azul-fuerte, #2A7AE4);
+    border: none;
+    cursor: pointer;
+    color: var(--color-blanco, #FFFFFF);
+    font-family: var(--font-family, Raleway, sans-serif);
+    text-decoration: none;
+    width: 10em;
+    padding: 18px;
+    align-items: center;
+ }
+ .formcontato__textarea{
+    display: flex;
+    height: 22em;
+    border: none;
+    background-color: var(--color-blanco, #FFFFFF);
+ }
+ .formcontato__boton:hover {
+	background-color:#285282;
+ }
+ .formcontato__boton:active {
+	position:relative;
+	top:1px;
 }
-
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
-}
+.footer {
+    background-color: var(--color-blanco, #FFFFFF);
+   
+ }
+ .footer__rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .footer__rodape p{
+    margin-bottom: 0;
+    margin-top: 2px;
+ }
