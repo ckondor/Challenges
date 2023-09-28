@@ -36,7 +36,7 @@
                         <a href="#">Hobbies</a>
                         <a href="#">Formación</a>
                         <a href="#">Proyectos</a>
-                        <a href="#contacto" class="menu_list_item_contato" >hecelivel@gmail.com</a>
+                        <a href="#contacto" class="header-contacto" >hecelivel@gmail.com</a>
                     </nav>
                 </div>
             </div>
@@ -302,15 +302,26 @@
                                 <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                                 <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                             <form class="formcontato__form" name="form">
-                                <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                                <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                                <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                                <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                                <div class="formcotato-input-container">
+                                    <input type="text" name="nombre" id="name" required>
+                                    <label for="name">Nombre</label>
+                                </div>
+                                <div class="formcotato-input-container">
+                                    <input type="text" name="email" id="mail" required>
+                                    <label for="mail">E-mail</label>
+                                </div>
+                                <div class="formcotato-input-container">
+                                    <input type="text" name="asunto" id="asunto" required>
+                                    <label for="asunto">Asunto</label>
+                                </div>
+                                <div class="formcotato-textarea-container">
+                                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" required></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
                                 <button type="submit" class="formcontato__boton">Enviar mensaje</button>
                             </form>
                             </div>
-                        </div>
-                            
+                        </div>      
                 </div>
             </div>   
                 
