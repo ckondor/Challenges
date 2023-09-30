@@ -35,6 +35,7 @@ export function valida(input) {
     email: {
       valueMissing: "El campo correo no puede estar vacío.",
       typeMismatch: "El correo no es válido.",
+      patternMismatch: "El correo no es válido.",
     },
     asunto: {
       valueMissing: "El campo asunto no puede estar vacío.",
