@@ -27,6 +27,10 @@
     align-items: flex-start;
     justify-content: center;
 }
+.products-ficha h2{
+    font-size: 0.7rem;
+    font-weight:lighter;
+}
 .products-ficha img{
     height: 5rem;
     width: 6rem;
