@@ -11,22 +11,22 @@ header{
     align-items: center;
     gap: 1rem;
 }
-.header-logo{
+
+.header-boton-login {
+    background: var(--background-blanco);
+    color: var(--fuente-enlace);
+    border: 1px solid var(--fuente-enlace);
     display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-
-    
+    width: 11.58rem;
+    font-size: 16px;
+    height: 2rem
 }
-.header-logo-blue{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    color: var(--fuente-enlace)
+.boton-buscar {
+    height: 2.3rem;
 }
-
+   
 .header-searchbar{
     display: flex;
     align-items: center;
@@ -36,12 +36,15 @@ header{
 }
 
 .barra-busqueda{ 
-        flex: 1;
         border: none;
         padding: 10px;
         border-radius: 20px;
         outline: none;
         max-width: 100%;
         position: absolute;
- 
+        height: 2rem
 }
+.barra-busqueda::placeholder{
+    color: var(--fuente-oscuro-50);
+}
+

@@ -18,78 +18,87 @@
         <link href="css/header.css" rel="stylesheet">
         <link href="css/contacto.css" rel="stylesheet">
         <link href="css/inputs.css" rel="stylesheet">
-       
+        <link href="css/media_call.css" rel="stylesheet">
         
     </head>
     <body>
         <header class="header container">
             <div class="header-nav">    
-                <div class="header-logo">
-                    <h1 class="header-logo-blue"><i class="fa fa-gamepad"></i> Alura</h1>
-                    <h1 class="header--logo-black">Geek</h1>
+                <div class="logo-alura">
+                    <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i> Alura</h1>
+                    <h1 class="logo-alura-black">Geek</h1>
                 </div>
                 <div class="header-searchbar">
                     <input class="barra-busqueda" type="text" placeholder="¿Qué deseas buscar?">
-                    <button type="submit">
+                    <button Class="boton-buscar"type="submit">
                         <i class="fa fa-search"></i>
-                        <span class="texto-boton"></span>
+                        <span class="barra-busqueda-boton-span"></span>
                     </button>
                 </div>
             </div>    
-            <a href=""><button>Login</button></a> 
+            <a href=""><button class="header-boton-login">Login</button></a> 
         </header>
-        <main>
+ <main>
             <section class="banner container">
-                <img class="banner-img" src="../eComerce/asets/banner_img.avif" alt="">
-                <div class="banner-text">
+                <div class="banner-background">
+                </div>
+                <!-- <img class="banner-img" src="./asets/banner_img.png" alt=""> -->
+               <!--*<div class="banner-text">
                     <h1>¡Bienvenido a AluraGeek!</h1>
                     <p>La tienda de tecnología más grande de Latinoamérica</p>
                     <a href=""><button>Ver Ofertas</button></a>
-                </div>
+                </div>-->
             </section>
             <section class="products container ">
                 
                 <div class="products-seccion">
                     <div class="products-titulos">   
                         <h2>Juegos</h2>
-                        <a href="" >Ver todo<i class='fa fa-arrow-right'></i></a>
+                        <a href="" >Ver todo<i class='fa fa-arrow-right alura-icono'></i></a>
                     </div>
                     <div class="products-galeria">
                         <div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a> </div>
-                        <div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                         <div class="producs-img">
+                            <img src="./asets/juego_1.jfif" alt=""></div>
+                         <h2>Eu malesuada</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a> 
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/juego_2.jfif" alt=""></div>
+                         <h2> Nunc quis erat</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/juego_3.jfif" alt=""></div>
+                         <h2>Eit amet dolor</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/juego_4.jfif" alt=""></div>
+                         <h2>Auctor tristique</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/juego_5.jfif" alt=""></div>
+                         <h2>Pellentesque mollis </h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/juego_6.jfif" alt=""></div>
+                         <h2>Consectetur lacus</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/juego_7.jfif" alt=""></div>
+                         <h2>Sed molestie orci</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
                     </div></div>
                 </div>
 
@@ -100,38 +109,38 @@
                     </div>
                     <div class="products-galeria">
                         <div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_1.jfif" alt=""></div> 
+                            <h2>Eu malesuada</h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a> </div>
                         <div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_2.jfif" alt=""></div> 
+                            <h2> Nunc quis erat</h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a>
                         </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_3.jfif" alt=""></div> 
+                            <h2>Eit amet dolor</h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a>
                         </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_4.jfif" alt=""></div> 
+                            <h2>Auctor tristique</h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a>
                         </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_5.jfif" alt=""></div> 
+                            <h2>Pellentesque mollis </h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a>
                         </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_6.jfif" alt=""></div> 
+                            <h2>Consectetur lacus</h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a>
                         </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
+                            <div class="producs-img"><img src="./asets/hardware_7.jfif" alt=""></div> 
+                            <h2>Sed molestie orci</h2>
                             <h3>$ 99.99</h3>
                             <a href="">Ver Producto</a>
                     </div></div>
@@ -143,50 +152,57 @@
                         <a href="" >Ver todo<i class='fa fa-arrow-right'></i></a>
                     </div>
                     <div class="products-galeria">
-                        <div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a> </div>
-                        <div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
-                        </div><div class="products-ficha">
-                            <img src="" alt="">
-                            <h2>EL producto</h2>
-                            <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                     <div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_1.jfif" alt=""></div> 
+                         <h2>Eu malesuada</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_2.jfif" alt=""></div> 
+                         <h2> Nunc quis erat</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_3.jfif" alt=""></div> 
+                         <h2>Eit amet dolor</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_4.jfif" alt=""></div> 
+                         <h2>Auctor tristique</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_5.jfif" alt=""></div> 
+                         <h2>Pellentesque mollis </h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_6.jfif" alt=""></div> 
+                         <h2>Consectetur lacus</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
+                     </div><div class="products-ficha">
+                        <div class="producs-img">
+                            <img src="./asets/arte_7.jfif" alt=""></div>   
+                         <h2>Sed molestie orci</h2>
+                         <h3>$ 99.99</h3>
+                         <a href="">Ver Producto</a>
                     </div></div>
                 </div>
             </section>
         </main>
         <div class="contacto container">
             <div class="contacto-contenido">
-                <div class="contacto-logo"> 
-                    <h1 class="header-logo-blue"><i class="fa fa-gamepad"></i> Alura</h1>
-                    <h1 class="header--logo-black">Geek</h1>                   
+                <div class="logo-alura"> 
+                    <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i>Alura</h1>
+                    <h1 class="logo-alura-black">Geek</h1>                   
                 </div>
                 <div class="contacto-info">
                     <a href="">Quienes somos</a>
@@ -198,8 +214,16 @@
                 </div>
                 <div class="contacto-formulario">
                     <h2>Hable con nosotros</h2>
-                    <input type="text" placeholder="Nombre">    
-                    <input type="text" placeholder="Mensaje">
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" maxlength="50"required data-tipo="nombre" >
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <label class="textarea-label" for="mensaje">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="textarea" rows="5" cols="33" maxlength="300" required data-tipo="mensaje"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
+                      </div>
                     <button>Enviar Mensaje</button>
                 </div>
             </div>
@@ -212,4 +236,5 @@
         </footer> 
     </body>
 </html>
+<script type="module" src="./validation_form/app.js"></script>
 

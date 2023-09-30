@@ -7,14 +7,14 @@
 .products-seccion{
    max-width: 100%;
 }
-.products-titulos{
+.products-titulos {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 .products-galeria{
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -31,9 +31,19 @@
     font-size: 0.7rem;
     font-weight:lighter;
 }
-.products-ficha img{
-    height: 5rem;
-    width: 6rem;
+.producs-img {
+    display: flex;
+    overflow: hidden;
+    height: 9rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--background-azul-claro);
+}
 
+
+.products-img img{
+    object-fit:cover;
 }
 
