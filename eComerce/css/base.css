@@ -36,12 +36,13 @@ a{
 
 body {
     font-family: var(--open-sans);
+    font-family: var(--open-sans);
 }
 .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-right: 6%;
     padding-left: 6%;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 
@@ -81,15 +82,13 @@ body {
         pointer-events: none;
     }
     .fa {
-        font-size: 0.8rem;
+        font-size: 21px;
         padding-bottom: 0.16rem;
     }
   
     .logo-alura{
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: center;
         align-items: center;
     }
     .logo-alura-blue{
@@ -103,8 +102,12 @@ body {
     }
 
     .logo-alura-blue, .logo-alura-black{
-       font-size: 0.7rem;
+       font-size: 22px;
        font-weight: bold;
        font-family: var(--open-sans);
     } 
+    
+    
+    
+   
 

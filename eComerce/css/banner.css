@@ -6,6 +6,8 @@
   align-items: center;
   color: var(--background-blanco);
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 12.25rem;
   padding-bottom: 2.5rem;
 }
