@@ -1,0 +1,103 @@
+ @media screen and (min-width: 1024px){  
+.container {
+    padding-left: calc((100% - 940px)/2);
+    padding-right: calc((100% - 940px)/2);
+}
+
+}
+  @media screen and (max-width: 1441px) {    
+ 
+    .products-img{
+        height: 9rem;
+        width: 9.3rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+  .container{
+    padding-right: 4%;
+    padding-left: 4%;
+ } 
+ .header-login {
+    margin-left: 62px;
+}
+.banner{
+    background-image: url(../asets/banner_img_tablet.png);
+}
+.contacto-info{
+    padding-left: 0px;    
+    padding-top: 3rem;
+    
+ }
+ .products-img{
+    height: 10rem;
+    width: 10.2rem;
+ }
+    .contacto-formulario{
+        padding-left: 0px;    
+        padding-top: 1rem;
+    }
+    .barra-busqueda{
+        position: relative;
+        margin: 0;
+    }
+}
+  
+
+
+
+@media screen and (max-width: 360px) {
+    .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .barra-busqueda{
+        display: none;
+    }
+    .logo-alura-blue, .logo-alura-black{
+        font-size: 16px;
+     } 
+    .header-boton-login{
+        width: 8.58rem;
+        font-size: 16px;
+        height: 2.5rem;
+     }
+     .header-login {
+        margin-left: 0px;
+    }
+
+    .banner{
+        background-image: url(../asets/banner_img_movile.png);
+    }
+    
+    .mini-busqueda{
+        display: inline-flex;
+        color: var(--fuente-oscuro);
+    }
+
+    .contacto-info{
+        padding-left: 0px;    /* padding-left: 140px; */
+        padding-top: 0rem;
+        align-items: center;
+        gap: 0;
+
+    }
+    .contacto-formulario{
+        padding-left: 0px;    /* padding-left: 140px; */
+        padding-top: 0rem;
+    }
+    .contacto-logo-alura{
+        position: relative;
+
+        
+    }   
+    .contacto-contenido{
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+                
+  }
+  
