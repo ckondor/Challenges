@@ -58,6 +58,8 @@ body {
         padding: 0.45rem;
         align-items: center;
         font-size: var(--button-font-size);
+        justify-content: center;
+        height: 2.2rem;
      }
      
      button:hover {

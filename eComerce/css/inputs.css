@@ -23,7 +23,7 @@
   
   .input {
     box-sizing: border-box;
-    border-bottom: 1px solid var(--secondary-color);
+    
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     height: 2.5rem;
     width: 100%;
@@ -37,6 +37,7 @@
   
   .input:focus {
     outline: none;
+    border-bottom: 1px solid var(--secondary-color);
   }
   
   .input-label {

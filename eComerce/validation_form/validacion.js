@@ -35,6 +35,10 @@ export function valida(input) {
       typeMismatch: "El correo no es válido.",
       patternMismatch: "El correo no es válido.",
     },
+    password: {
+      valueMissing: "El campo contraseña no puede estar vacío",
+      patternMismatch:"Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.",
+    }
     asunto: {
       valueMissing: "El campo asunto no puede estar vacío.",
       textLimit: "El campo asunto no puede tener más de 50 caracteres.",

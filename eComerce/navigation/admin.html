@@ -16,7 +16,7 @@
         <link href="../css/header.css" rel="stylesheet">
         <link href="../css/contacto.css" rel="stylesheet">
         <link href="../css/inputs.css" rel="stylesheet">
-        <link href="../css/login.css" rel="stylesheet">
+        <link href="../css/admin.css" rel="stylesheet">
         <link href="../css/media_call.css" rel="stylesheet">
         
     </head>
@@ -34,23 +34,72 @@
                       <span class="icono-busqueda"><i class="fa fa-search"></i></span>
                     </button>
                 </div>
-               <!-- <a class="header-login"href=""><button class="header-boton-login">Login</button></a> -->
+               <a class="header-login"href=""><button class="header-boton-login">Menú Administrador</button></a>
                 <div class="mini-busqueda"><i class="fa fa-search"></i></div>
             </header>
         <main>
-            <section class="login container">
-                <h2>Iniciar sesión</h2>
-                <div class="login-input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
-                        <label class="input-label" for="email">Email</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-                <div class="login-input-container">
-                    <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
-                    <label class="input-label" for="password">Contraseña</label>
+            <section class="registro container">
+                <h2>Agregar nuevo producto</h2>
+                
+                <form class="registro-form"
+                >
+                <div class="input-container">
+                    <input
+                    name="url"
+                    id="url"
+                    class="input"
+                    type="url"
+                    placeholder="Url de imagen"
+                    />
+                    <label class="input-label" for="url">Url de imagen</label>
                     <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-                <button>Entrar</button>
+                </div>
+                <div class="input-container">
+                    <input
+                    name="categoria"
+                    id="categoria"
+                    class="input"
+                    type="text"
+                    placeholder="Categoria"
+                    />
+                    <label class="input-label" for="categoria">Categoria</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input
+                    name="name"
+                    id="name"
+                    class="input"
+                    type="text"
+                    placeholder="Nombre"
+                    />
+                    <label class="input-label" for="name">Nombre del producto</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container registry__price-container">
+                    <input
+                    name="price"
+                    id="price"
+                    class="input"
+                    type="text"
+                    placeholder="Precio"
+                    />
+                    <label class="input-label" for="price">Precio</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container registry__description-container">
+                    <input
+                    class="input"
+                    name="description"
+                    id="description"
+                    placeholder="Descripción del producto"
+                    />
+                    <label class="input-label" for="description">Descripción del producto</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <button>Agregar producto</button>
+                </form>
+                
             </section>
             <section class="contacto container">
                 <div class="contacto-contenido">
